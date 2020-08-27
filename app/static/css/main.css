@@ -4,18 +4,14 @@ body {
     margin-left: auto;
 }
 
-h1 {
-    text-shadow: 0px 0px 4px #2f6627;
-    color: #FF0066;
-    display: inline-block;
-}
+
 
 hr {
     width: 100%;
     margin: 0 auto;
     border: 0;
     height: 1px;
-    box-shadow: lightblue;
+    box-shadow: 0px 0px 5px 0px lightblue;
 
 }
 
@@ -23,20 +19,20 @@ hr {
     display: block;
     border-radius: 5px;
     background: #ffffff;
-    box-shadow: lightblue;
+    box-shadow: 0px 0px 50px 0px lightblue;
 }
 
 #picture {
     display: block;
     border-radius: 5px;
     background: #ffffff;
-    box-shadow: lightblue;
+    box-shadow: 0px 0px 18px 0px lightblue;
 }
 
-#reset {
-    -moz-box-shadow: 0px 0px 30px 0px #FF0099;
-    -webkit-box-shadow: 0px 0px 30px 0px #FF0099;
-    box-shadow: 0px 0px 18px 0px #FF0099;
+#reset1 {
+    -moz-box-shadow: 0px 0px 30px 0px lightblue;
+    -webkit-box-shadow: 0px 0px 30px 0px lightblue;
+    box-shadow: 0px 0px 18px 0px lightblue;
     background-color: #FF0066;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -54,11 +50,11 @@ hr {
     margin-bottom: 30px;
 }
 
-#reset:hover {
+#reset1:hover {
     background-color: #FF0033;
 }
 
-#reset:active {
+#reset1:active {
     position: relative;
     top: 1px;
 }
