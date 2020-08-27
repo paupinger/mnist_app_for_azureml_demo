@@ -122,7 +122,6 @@ window.onload = () => {
         ctx.fillRect(0, 0, canvasWidth, canvasHeight);
         picCtx.fillRect(0, 0, picture.width, picture.height);
         document.getElementById("d").innerText = "?";
-
         $('.result td').text('').removeClass('answer');
     }
 };
