@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <title>What digit you write?</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 </head>
 <body>
 
-<h1>What Digit You Write?</h1>
+    <div class="container">
+    <div class="alert alert-primary" role="alert">
+        <center><h1>Draw Your Digit On Canvas 😎</h1></center>
+      </div>
+    </div>
+    
 <hr/>
 <div class="content">
 
     <div class="content-left">
+        
         <canvas id="canvas"></canvas>
+        <br>
+        <center><h3>👆 DRAW HERE 👆</h3></center>
     </div>
 
     <div class="content-center">
-        <canvas id="picture"></canvas>
-        <a href="#" id="reset">reset</a>
+        <center><canvas id="picture"></canvas></center>
+        <br>
+        <center><a class="btn btn-outline-danger" href="#" id="reset" role="button">Reset</a></center>
+        <br>
+        <h3>: Your Digit :</h3>
+        <br><br>
+        <center><h2 id="d"></h2></center>
+        
     </div>
     <div class="content-right">
         <table class="result">
             <tr>
                 <th class="th-1">&nbsp;</th>
-                <th class="th-2">regression</th>
-                <th class="th-3">convolutional</th>
+                <th class="th-2">-Regression-</th>
+                <th class="th-3">-Convolutional-</th>
             </tr>
             <tr>
                 <th>0</th>
