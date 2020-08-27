@@ -92,10 +92,11 @@ window.onload = () => {
                                 max = tmp;
                                 max_idx = j;
                             }
+                            
                             value = parseFloat(value.toFixed(3));
                             $('.result tr').eq(j + 1).find('td').eq(i).text(value);
                         }
-
+                        
                         /* Add a style to the maximum */
                         for (let j = 0; j < 10; ++j) {
                             let node = $('.result tr').eq(j + 1).find('td').eq(i);
@@ -105,6 +106,7 @@ window.onload = () => {
                                 node.removeClass('answer');
                             }
                         }
+                        document.getElementById("d").innerText = max_idx;
                     }
                 }
             });
