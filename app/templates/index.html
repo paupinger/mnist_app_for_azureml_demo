@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>What digit you write?</title>
+    <title>MNIST</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -13,20 +13,12 @@
 </head>
 <body>
 
-    <div class="container">
-    <div class="alert alert-primary" role="alert">
-        <center><h1>Draw Your Digit On Canvas 😎</h1></center>
-      </div>
-    </div>
-    
-<hr/>
-<div class="content">
 
     <div class="content-left">
         
         <canvas id="canvas"></canvas>
         <br>
-        <center><h3>👆 DRAW HERE 👆</h3></center>
+        <center><h3>Draw Digit</h3></center>
     </div>
 
     <div class="content-center">
@@ -34,7 +26,7 @@
         <br>
         <center><a class="btn btn-outline-danger" href="#" id="reset" role="button">Reset</a></center>
         <br>
-        <h3> 👇 _Your Digit_ 👇 </h3>
+        <h3> Prediction </h3>
         <br><br>
         <div class="alert alert-success" role="alert">
             <center><h1 id="d"></h1></center>
@@ -46,57 +38,46 @@
         <table class="result">
             <tr>
                 <th class="th-1">&nbsp;</th>
-                <th class="th-2">-Regression-</th>
-                <th class="th-3">-Convolutional-</th>
+                <th class="th-2">-Result-</th>
             </tr>
             <tr>
                 <th>0</th>
-                <td></td>
                 <td></td>
             </tr>
             <tr>
                 <th>1</th>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>2</th>
-                <td></td>
                 <td></td>
             </tr>
             <tr>
                 <th>3</th>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>4</th>
-                <td></td>
                 <td></td>
             </tr>
             <tr>
                 <th>5</th>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>6</th>
-                <td></td>
                 <td></td>
             </tr>
             <tr>
                 <th>7</th>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>8</th>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>9</th>
-                <td></td>
                 <td></td>
             </tr>
         </table>

@@ -1,13 +1,18 @@
-import tensorflow as tf
+import pandas as pd
+import requests
 
-
-def predict_by_regression(x_predict):
-    x_predict = x_predict.reshape(1, 28, 28)
-    model = tf.keras.models.load_model('app/models/regression.h5')
-    return model.predict(x_predict).flatten().tolist()
-
-
-def predict_by_cnn(x_predict):
+def predict_by_endpoint(x_predict):
     x_predict = x_predict.reshape(1, 28, 28, 1)
-    model = tf.keras.models.load_model('app/models/convolutional.h5')
-    return model.predict(x_predict).flatten().tolist()
+
+    df = pd.DataFrame([x_predict.flatten()])   
+
+    data = df.to_json(orient="split")
+
+    url = "http://b183e199-f94a-4254-83a2-640ca67bb281.westeurope.azurecontainer.io/score"
+    headers = {'Content-Type':'application/json'}
+
+    resp = requests.post(url, data, headers=headers)
+
+    values = resp.json()["predict_proba"][0]
+
+    return values
