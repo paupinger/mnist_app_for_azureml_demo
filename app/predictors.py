@@ -8,7 +8,8 @@ def predict_by_endpoint(x_predict):
 
     data = df.to_json(orient="split")
 
-    url = "http://b183e199-f94a-4254-83a2-640ca67bb281.westeurope.azurecontainer.io/score"
+    # add endpoint URL here
+    url = ""
     headers = {'Content-Type':'application/json'}
 
     resp = requests.post(url, data, headers=headers)
